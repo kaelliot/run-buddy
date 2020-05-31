@@ -129,17 +129,6 @@ footer a {
     padding: 10px 20px;
     font-size: 16px;
 }
-/* remove this entire CSS Rule */
-.intro h2 {
-    /* add this alongside your other declarations */
-    display: inline-block;
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-}
 .intro p {
     /* add this alongside your other declarations */
     margin: 0 auto;
@@ -152,21 +141,12 @@ footer a {
 .steps {
     background: #fce138
 }
-/* and this one */
-.steps h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-}
 .step h3 {
     color: #024e76;
     font-size: 46px;
     flex: 1 30%;
 }
-.step-text p{
+.step-text p {
     color: #39a6b2;
     font-size: 18px;
 }
@@ -212,9 +192,11 @@ footer a {
 }
 .primary-border {
     border-color: #fce138;
+    padding: 20px;
 }
 .secondary-border {
     border-color: #39a6b2;
+    padding: 20px;
 }
 .trainers {
 }
