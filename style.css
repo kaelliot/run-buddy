@@ -12,6 +12,7 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -20,14 +21,16 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: #fce138;
+    display: inline;
 }
 
 header a {
     text-decoration: none;
     color: #fce138;
+    text-align: center;
 }
 header nav {
-    display: flex;
+    float: right;
     margin: 7px 0;
 }
 header nav ul {
