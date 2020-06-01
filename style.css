@@ -291,16 +291,11 @@ footer a {
     border-color: var(--tertiary-color);
     padding: 20px;
 }
-.trainers {
-}
 .trainer {
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
     flex: 1;
-}
-.trainer img {
-    width: 100%;
 }
 .trainer-bio {
     padding: 25px;
@@ -314,6 +309,7 @@ footer a {
 }
 .trainer-bio h3 {
     font-size: 28px;
+    margin-bottom: 5px;
 }
 .trainer-bio h4 {
     font-weight: lighter;
@@ -330,6 +326,67 @@ footer a {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.trainer-1 {
+    background:
+        linear-gradient(
+            rgba(252, 225, 56, 0.3),
+            rgba(2, 78, 118, 0.3)
+        ),
+        url("./assets images/trainer-1.jpg");
+}
+.trainer-2 {
+    background:
+        linear-gradient(
+            rgba(252, 225, 56, 0.3),
+            rgba(2, 78, 118, 0.3)
+        ),
+        url("./assets images/trainer-2.jpg");
+}
+.trainer-3 {
+    background:
+        linear-gradient(
+            rgba(252, 225, 56, 0.3),
+            rgba(2, 78, 118, 0.3)
+        ),
+        url("./assets images/trainer-3.jpg");
+}
+.trainer-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    /*background: linear-gradient(to bottom, rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 0.3));*/
+}
+.trainer-img h3 {
+    position: relative;
+    z-index: 100;
+    top: 0px;
+    transition: 0.6;
+}
+.trainer-img h4 {
+    position: relative;
+    z-index: 100;
+    top: 0px;
+    transition: 0.6;
+}
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.6;
+}
+.trainer:hover .trainer-img:hover h3, .trainer:hover .trainer-img h4 {
+
+}
+
 /* SERVICE STYLES BEGIN */
 .services {
     background: var(--primary-color);
@@ -381,9 +438,6 @@ footer a {
 }
 .contact h2 {
     color: var(--primary-color);
-}
-.contact-info iframe {
-
 }
 .contact-info div {
     color: white;
